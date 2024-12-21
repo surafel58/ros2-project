@@ -1,0 +1,24 @@
+[2.154s] Invoking command in '/home/surafel/ros2_ws/src/lab_1_package': PYTHONPATH=/home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/lab_1_package build --build-base /home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/build install --record /home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/install.log --single-version-externally-managed install_data
+[2.923s] running egg_info
+[2.991s] writing build/lab_1_package/lab_1_package.egg-info/PKG-INFO
+[2.992s] writing dependency_links to build/lab_1_package/lab_1_package.egg-info/dependency_links.txt
+[2.993s] writing entry points to build/lab_1_package/lab_1_package.egg-info/entry_points.txt
+[2.994s] writing requirements to build/lab_1_package/lab_1_package.egg-info/requires.txt
+[2.995s] writing top-level names to build/lab_1_package/lab_1_package.egg-info/top_level.txt
+[3.139s] reading manifest file 'build/lab_1_package/lab_1_package.egg-info/SOURCES.txt'
+[3.140s] adding license file 'LICENSE'
+[3.142s] writing manifest file 'build/lab_1_package/lab_1_package.egg-info/SOURCES.txt'
+[3.143s] running build
+[3.143s] running build_py
+[3.143s] running install
+[3.160s] running install_lib
+[3.230s] running install_data
+[3.230s] copying urdf/robot.urdf -> /home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/share/lab_1_package/urdf
+[3.231s] running install_egg_info
+[3.292s] removing '/home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/python3.12/site-packages/lab_1_package-0.0.0-py3.12.egg-info' (and everything under it)
+[3.294s] Copying build/lab_1_package/lab_1_package.egg-info to /home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/python3.12/site-packages/lab_1_package-0.0.0-py3.12.egg-info
+[3.296s] running install_scripts
+[3.679s] Installing detect_objects script to /home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/lab_1_package
+[3.679s] Installing move_robot script to /home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/lab_1_package
+[3.680s] writing list of installed files to '/home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/install.log'
+[3.759s] Invoked command in '/home/surafel/ros2_ws/src/lab_1_package' returned '0': PYTHONPATH=/home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/surafel/ros2_ws/src/lab_1_package/install/lab_1_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/lab_1_package build --build-base /home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/build install --record /home/surafel/ros2_ws/src/lab_1_package/build/lab_1_package/install.log --single-version-externally-managed install_data

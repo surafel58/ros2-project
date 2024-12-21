@@ -1,0 +1,3 @@
+[console_scripts]
+detect_objects = lab_1_package.detect_objects:main
+move_robot = lab_1_package.move_robot:main
