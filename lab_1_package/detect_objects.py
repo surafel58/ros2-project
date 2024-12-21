@@ -9,7 +9,7 @@ import ultralytics
 class ObjectDetectionNode(Node):
     def __init__(self):
         super().__init__('object_detection_node')
-        self.subscription = self.create_subscr6y99yoy/Y:iption(
+        self.subscription = self.create_subscription(
             Image,
             '/camera',
             self.image_callback,
