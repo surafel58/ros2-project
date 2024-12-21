@@ -50,7 +50,8 @@ def generate_launch_description():
             "/camera@sensor_msgs/msg/Image@gz.msgs.Image",
             "/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
             "/depth_camera/image_raw@sensor_msgs/msg/Image@gz.msgs.Image",
-            # "/depth_camera/depth@sensor_msgs/msg/Image@gz.msgs.Image",
+            "/depth_camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
+            "/depth_camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
         ],
         output="screen",
     )
@@ -62,23 +63,23 @@ def generate_launch_description():
     )
 
     # Convert depth image to point cloud
-    # depth_to_pointcloud = Node(
-    #     package='depth_image_proc',
-    #     executable='point_cloud_xyz_node',
-    #     name='point_cloud_xyz_node',
-    #     output='screen',
-    #     remappings=[
-    #         ('image_rect', '/depth_camera/image_rect'),
-    #         ('camera_info', '/camera_info'),
-    #         ('points', '/depth_camera/points'),
-    #     ]
-    # )
+    depth_to_pointcloud = Node(
+        package='depth_image_proc',
+        executable='point_cloud_xyz_node',
+        name='point_cloud_xyz_node',
+        output='screen',
+        remappings=[
+            ('image_rect', '/depth_camera/image_raw'),
+            ('camera_info', '/depth_camera/camera_info'),
+            ('points', '/depth_camera/points'),
+        ]
+    )
 
     return LaunchDescription([
         robot_state_publisher,
         gazebo,
         spawn_robot,
         bridge,
-        object_detection_node
-        # depth_to_pointcloud
+        object_detection_node,
+        depth_to_pointcloud
     ])
