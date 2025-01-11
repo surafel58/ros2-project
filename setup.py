@@ -15,6 +15,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/gazebo_sim.launch.py']),
         ('share/' + package_name + '/rviz', ['rviz/urdf.rviz']),
         ('share/' + package_name + '/worlds', ['worlds/my_world.sdf']),
+        ('share/' + package_name + '/config', ['config/custom_nav2_params.yaml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +28,7 @@ setup(
         'console_scripts': [
             'move_robot = lab_1_package.move_robot:main',
             'detect_objects = lab_1_package.detect_objects:main',
+            'segment_objects = lab_1_package.segment_objects:main',
         ],
     },
 )
